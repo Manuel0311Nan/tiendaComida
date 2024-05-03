@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/landing/Hero.astro";
+import FormContact from "@/components/contact/FormContact.astro";
+
+const ruta= "/"
+const frase = "Vuelve al catálogo"
+---
+
+<BaseLayout>
+  <Hero ruta={ruta} frase = {frase}/>
+  <FormContact  />
+</BaseLayout>

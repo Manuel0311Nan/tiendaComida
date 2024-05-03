@@ -1,3 +1,7 @@
+---
+const { ruta, frase } = Astro.props
+---
+
 <main  class="relative overflow-hidden">
 
   <div class="relative mx-auto px-8 max-w-7xl py-24  md:px-12">
@@ -13,7 +17,7 @@
           border-red-800 duration-500 focus:outline-none inline-flex px-6 py-3 
           text-center w-full text-white-500  lg:w-auto border 
           focus-visible:outline-negroni-500 text-white bg-red-800 hover:bg-white hover:text-red-800"
-          href="#">Envíanos tu pedido</a
+          href={ruta}>{frase}</a
         >
       </div>
     </div>

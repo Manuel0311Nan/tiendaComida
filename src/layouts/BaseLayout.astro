@@ -2,15 +2,18 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/global/Footer.astro";
 import Header from "../components/global/Navigation.astro";
+
+const ruta= "/contact"
+const frase = "Contáctanos"
 ---
 
 <html lang="en">
   <head>
-    <BaseHead />
+    <BaseHead/>
   </head>
 
   <body class="bg-red-600">
-    <Header/>
+    <Header  ruta={ruta} frase={frase}/>
     <slot />
 <Footer/>
   </body>
